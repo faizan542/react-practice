@@ -1,26 +1,9 @@
 import React, { Component } from 'react'
 import './App.css';
-import ComOne from './components/ComOne';
+import Header from './components/Header';
+import { ComOne, Logo } from './components/ComOne';
+import Footer from './components/Footer';
 
-class Header extends Component {
-  render() {
-    return (
-      <div className='header'>
-        <h1>Header</h1>
-      </div>
-    )
-  }
-}
-
-class Footer extends Component {
-  render() {
-    return (
-      <div className='footer'>
-        <h1>Footer</h1>
-      </div>
-    )
-  }
-}
 
 export default class App extends Component {
   render() {
@@ -28,6 +11,8 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+        
+        <Logo />
 
         <h1 style={{ fontStyle: "italic", fontFamily: "fantasy", backgroundColor: "pink" }}>Main Component</h1>
         <ul className='todos'>
