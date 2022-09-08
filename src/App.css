@@ -8,4 +8,7 @@
 
 .footer{
     color: rebeccapurple;
+    position: sticky;
+    top: 0;
+    background-color: cadetblue;
 }
