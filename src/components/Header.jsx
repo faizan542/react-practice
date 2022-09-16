@@ -3,12 +3,13 @@ import Logo from '../images/logo.png'
 
 export default class Header extends Component {
     render() {
+        // console.log("props", this.props)
         return (
             <div>
                 <nav className="navbar navbar-expand-lg bg-light">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
-                            <img src={Logo} width='100px' />
+                            <img src={Logo} width='100px' /> {this.props.page}
                         </a>
                         <button
                             className="navbar-toggler"
@@ -82,6 +83,10 @@ export default class Header extends Component {
                         </div>
                     </div>
                 </nav>
+
+                <h1>{this.props.name}</h1>
+
+                <button onClick={() => this.props.getProps("Sending a props")}>Send</button>
 
             </div>
         )
