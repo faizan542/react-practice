@@ -3,7 +3,6 @@ import './App.css';
 import { ComOne, Logo } from './components/ComOne';
 // import Footer from './components/Footer';
 import Child from './components/Child';
-import Time from './components/Time';
 
 export default class App extends Component {
   get_data = (data) => {
@@ -31,7 +30,6 @@ export default class App extends Component {
             <Child name="bike" price="5000"/> */}
 
 
-            <Time />
 
         {/* <Footer /> */}
       </div>
