@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '../images/logo.png'
+import Time from './Time';
 
 export default class Header extends Component {
     render() {
@@ -83,6 +84,8 @@ export default class Header extends Component {
                         </div>
                     </div>
                 </nav>
+
+                <Time />
 
                 <h1>{this.props.name}</h1>
 
